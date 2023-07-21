@@ -78,7 +78,7 @@ python3 demo.py --imagedir=data/Barn --calib=calib/barn.txt --stride=1 --backend
 python3 demo.py --imagedir=data/mav0/cam0/data --calib=calib/euroc.txt --t0=150
 ```
 ```
-python demo.py --imagedir=data/rgbd_dataset_freiburg3_cabinet/rgb --calib=calib/tum3.txt
+python3 demo.py --imagedir=data/rgbd_dataset_freiburg3_cabinet/rgb --calib=calib/tum3.txt
 ```
 
 
