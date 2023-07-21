@@ -1,5 +1,5 @@
 # Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit
-DROID SLAM is an advanced SLAM system that utilizes RGB-D cameras for real-time mapping and localization. In this repository we have implemented DROID SLAM in Jstson AGX ORIN developer kit
+DROID SLAM is an advanced SLAM system that utilizes RGB-D cameras for real-time mapping and localization. In this repository we have implemented DROID SLAM in Jetson AGX ORIN developer kit
 
 # Create a conda environment
 ```Python
@@ -39,6 +39,14 @@ and finally install PyTorch using below command
 ```
 python3 -m pip install --upgrade pip; python3 -m pip install aiohttp numpy=='1.19.4' scipy=='1.5.3' export "LD_LIBRARY_PATH=/usr/lib/llvm-8/lib:$LD_LIBRARY_PATH"; python3 -m pip install --upgrade protobuf; python3 -m pip install --no-cache $TORCH_INSTALL
 ```
-
+## DRIOD-SLAM
+After successful installation of pytorch now we can move ahead to implement DROID-SLAM in Jetson AGX developer kit, before proceding activate the envioronment which we have created before
+```
+conda activate slam
+```
+and also run the below command for install some other dependencies
+```
+pip3 install opencv-python rawpy einops matplotlib pandas GPUtil scikit-image scikit-learn tqdm open3d
+```
 
 
