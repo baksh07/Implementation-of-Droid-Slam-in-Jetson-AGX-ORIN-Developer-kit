@@ -51,7 +51,7 @@ pip3 install opencv-python rawpy einops matplotlib pandas GPUtil scikit-image sc
 ```
 pip3 install evo --upgrade --no-binary evo
 ```
-clone the DROID-SLAM repo with --recursive flag
+clone the DROID-SLAM repo with `--recursive flag`
 ```
 git clone --recursive https://github.com/princeton-vl/DROID-SLAM.git
 ```
