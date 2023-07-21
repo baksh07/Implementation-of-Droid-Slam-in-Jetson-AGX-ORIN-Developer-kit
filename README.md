@@ -60,6 +60,26 @@ move to the directory where the setup.py is located in that directory run the be
 python3 setup.py install
 ```
 Download the model from this [link](https://drive.google.com/file/d/1PpqVt1H4maBa_GbPJp4NwxRsd9jk-elh/view)
+you can download the dataset from the below code
+```
+./tools/download_sample_data.sh
+```
+after downloading the dataset locate demo.py and the run below given codes for excecution of DROID-SLAM
+```
+python3 demo.py --imagedir=data/abandonedfactory --calib=calib/tartan.txt --stride=2
+```
+```
+python3 demo.py --imagedir=data/sfm_bench/rgb --calib=calib/eth.txt
+```
+```
+python3 demo.py --imagedir=data/Barn --calib=calib/barn.txt --stride=1 --backend_nms=4
+```
+```
+python3 demo.py --imagedir=data/mav0/cam0/data --calib=calib/euroc.txt --t0=150
+```
+```
+python demo.py --imagedir=data/rgbd_dataset_freiburg3_cabinet/rgb --calib=calib/tum3.txt
+```
 
 
 
