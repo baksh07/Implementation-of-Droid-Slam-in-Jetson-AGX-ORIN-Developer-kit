@@ -46,7 +46,22 @@ conda activate slam
 ```
 and also run the below command for install some other dependencies
 ```
-pip3 install opencv-python rawpy einops matplotlib pandas GPUtil scikit-image scikit-learn tqdm open3d
+pip3 install opencv-python rawpy einops matplotlib pandas GPUtil scikit-image scikit-learn tqdm open3d gdown
 ```
+```
+pip3 install evo --upgrade --no-binary evo
+```
+clone the DROID-SLAM repo with --recursive flag
+```
+git clone --recursive https://github.com/princeton-vl/DROID-SLAM.git
+```
+move to the directory where the setup.py is located in that directory run the below code
+```
+python3 setup.py install
+```
+Download the model from this [link](https://drive.google.com/file/d/1PpqVt1H4maBa_GbPJp4NwxRsd9jk-elh/view)
+
+
+
 
 
