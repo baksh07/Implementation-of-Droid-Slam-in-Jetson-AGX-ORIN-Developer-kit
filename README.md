@@ -82,14 +82,16 @@ python3 demo.py --imagedir=data/mav0/cam0/data --calib=calib/euroc.txt --t0=150
 python3 demo.py --imagedir=data/rgbd_dataset_freiburg3_cabinet/rgb --calib=calib/tum3.txt
 ```
 To run DROID-SLAM on custom dataset follow the below steps
-1. create a folder in data folder you can give any name it doesn`t matter for example i created a folder named custom_dataset and paste all the captured frames
-2. create text file in calib folder and paste intrinsic parameters of the camera which you have used to captured data in my case i have used OAKD camera. In my case i had created oak.txt for storing intrinsic parameter
+1. create a folder in data folder you can give any name it doesn`t matter for example i had created a folder named custom_dataset and move all the captured frames to the folder
+2. create text file in calib folder and paste intrinsic parameters of the camera which you have used to captured data in my case i have used OAKD camera and i had created oak.txt for storing intrinsic parameter
 3. run the below command to run DROID-SLAM on custom dataset
+4. You can refer this [git](https://github.com/aartighatkesar/Camera_Calibration.git) to find intrinsic parameter`s of your camera
 ```
 python3 demo.py --imagedir=data/custom_datset --calib=calib/oak.txt --stride=2
 ```
 `Note: data/"folder you have named" same goes for .txt in calib folder`<br>
 To capture frames for custom dataset you can use the below code 
+`Note that below code is only applicable for OAK-D camera
 ```
 import sys
 import numpy as np
@@ -365,7 +367,7 @@ To render the desired pointcloud some of the things need to be taken care such a
    ```
    var CONFIG = './config/config002.json';
    ```
-3. It is advisable to use VS-CODE for the entire process
+3. ##It is advisable to use VS-CODE for the entire process
 
 
 
