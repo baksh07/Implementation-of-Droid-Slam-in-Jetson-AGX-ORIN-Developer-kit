@@ -1,9 +1,4 @@
-
-
-
-
-https://github.com/baksh07/Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit/assets/129616972/668bc8db-742f-4312-95f7-0546a60425ff
-
+[Screencast from 14-07-23 10:48:37 PM IST.webm](https://github.com/baksh07/Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit/assets/129616972/eb19cef3-99ee-4d1e-b4fb-d1bd7214685e)
 
 
 # Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit
@@ -373,9 +368,6 @@ To render the desired pointcloud some of the things need to be taken care such a
    var CONFIG = './config/config002.json';
    ```
 3. It is advisable to use VS-CODE for the entire process
-
-
-[Screencast from 14-07-23 10:48:37 PM IST.webm](https://github.com/baksh07/Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit/assets/129616972/eb19cef3-99ee-4d1e-b4fb-d1bd7214685e)
 
 
 
