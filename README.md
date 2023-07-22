@@ -1,3 +1,11 @@
+
+
+
+
+https://github.com/baksh07/Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit/assets/129616972/668bc8db-742f-4312-95f7-0546a60425ff
+
+
+
 # Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit
 DROID SLAM is an advanced SLAM system that utilizes RGB-D cameras for real-time mapping and localization. In this repository we have implemented DROID SLAM in Jetson AGX ORIN developer kit
 
@@ -346,7 +354,28 @@ if __name__ == "__main__":
     print(np.asarray(pcd.points))
     o3d.visualization.draw_geometries([pcd])
 ```
-To render the point cloud in web application visit this [git](https://github.com/mmspg/point-cloud-web-renderer.git)
+while running above code if you encounter the below error
+```
+[Open3D WARNING] GLFW Error: GLX: Failed to create context: GLXBadFBConfig
+[Open3D WARNING] Failed to create window
+[Open3D WARNING] [DrawGeometries] Failed creating OpenGL window.
+```
+by running ```export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6``` in your terminal you are good to go. <br>
+To render the point cloud in web application visit this [git](https://github.com/mmspg/point-cloud-web-renderer.git) <br>
+To render the desired pointcloud some of the things need to be taken care such as:
+1. open `htdocs/pointCloudVeiwer/config/config002.json` and change the ply file for rendering the desired pointcloud
+2. open `htdocs/pointCloudVeiwer/js/main.js` change line number 26 i.e
+   ```
+   var CONFIG = './config/config001.json';
+   ```
+   To
+   ```
+   var CONFIG = './config/config002.json';
+   ```
+3. It is advisable to use VS-CODE for the entire process
+
+
+[Screencast from 14-07-23 10:48:37 PM IST.webm](https://github.com/baksh07/Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit/assets/129616972/eb19cef3-99ee-4d1e-b4fb-d1bd7214685e)
 
 
 
