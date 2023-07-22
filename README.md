@@ -1,5 +1,3 @@
-[Screencast from 14-07-23 10:48:37 PM IST.webm](https://github.com/baksh07/Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit/assets/129616972/eb19cef3-99ee-4d1e-b4fb-d1bd7214685e)
-
 
 # Implementation-of-Droid-Slam-in-Jetson-AGX-ORIN-Developer-kit
 DROID SLAM is an advanced SLAM system that utilizes RGB-D cameras for real-time mapping and localization. In this repository we have implemented DROID SLAM in Jetson AGX ORIN developer kit
